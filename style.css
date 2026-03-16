@@ -55,22 +55,70 @@ section {
 
 /* About Me section */
 #home {
-
-    background: #e0e0e0;
+    background: #ffffff;
     color: #111;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    gap: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: stretch;
+    gap: 40px;
     text-align: left;
 }
 
-/* Hero text */
-.hero-text {
-    max-width: 500px;
+/* About layout */
+.about-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    background: #c7c7c7;
+    color: #111;
+    padding: 40px 24px;
+    border-radius: 18px;
+}
+
+.about-panel .name {
+    margin: 6px 0 0;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.about-panel .title {
+    margin: 8px 0 0;
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    text-transform: none;
+    font-weight: 700;
+    color: #111;
+}
+
+.about-panel .philosophy {
+    margin-top: 12px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.about-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+.hello,
+.summary-title {
+    color: #2b6cff;
+}
+
+.hello {
+    margin: 0 0 6px;
+    font-size: 28px;
+}
+
+.bio p,
+.career-summary p {
+    margin: 0 0 12px;
+    line-height: 1.7;
 }
 
 /* Profile Image */
@@ -81,7 +129,7 @@ section {
     object-fit: cover;
     object-position: center 25%;
     border: 4px solid white;
-    filter: grayscale(100%);
+    filter: none;
 }
 
 /* Alternating section colors */
@@ -124,12 +172,8 @@ footer {
 @media (max-width: 768px) {
 
     #home {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-text {
-        max-width: 100%;
+        grid-template-columns: 1fr;
+        text-align: left;
     }
 
     .profile-pic {
