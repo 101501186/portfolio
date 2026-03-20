@@ -61,6 +61,7 @@ section {
     padding: 36px;
     border-radius: 18px;
     margin-bottom: 24px;
+    scroll-margin-top: 100px;
 }
 
 /* About Me section */
@@ -116,6 +117,46 @@ section {
     flex-direction: column;
     gap: 16px;
     padding-top: 10px;
+}
+
+.about-cta {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.about-cta-text {
+    margin: 0;
+    font-weight: 600;
+    color: #111;
+}
+
+.about-cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+.about-cta-btn {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: #2b6cff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.about-cta-btn:hover {
+    background: #1f56d1;
 }
 
 .hello,
@@ -596,6 +637,7 @@ section {
     padding-bottom: 28px;
     padding-top: 12px;
     min-height: 26vh;
+    scroll-margin-top: 250px;
 }
 
 #projects {
