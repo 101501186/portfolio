@@ -387,8 +387,203 @@ section {
 }
 
 /* Alternating section colors */
-#philosophy, #professional {
+#professional {
     background: white;
+}
+
+#references {
+    background: #d0d0d0;
+}
+
+.references-section {
+    padding: 36px;
+}
+
+.references-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #e9e9e9;
+    border-radius: 18px;
+    padding: 32px 28px;
+}
+
+.references-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #2b6cff;
+    margin-bottom: 14px;
+}
+
+.references-intro {
+    max-width: 760px;
+    margin: 0 auto 28px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #333;
+}
+
+.references-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.reference-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 22px 20px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.reference-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.reference-label {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #2b6cff;
+    margin: 0 0 10px;
+}
+
+.reference-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111;
+    margin: 0 0 8px;
+}
+
+.reference-role {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 8px;
+}
+
+.reference-context {
+    font-size: 14px;
+    color: #555;
+    margin: 0 0 12px;
+}
+
+.reference-description {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #444;
+    margin: 0 0 14px;
+}
+
+.reference-contact {
+    font-size: 13px;
+    color: #333;
+    margin: 0 0 18px;
+}
+
+.reference-contact a {
+    color: #2b6cff;
+    text-decoration: none;
+}
+
+.reference-contact a:hover {
+    text-decoration: underline;
+}
+
+.reference-btn {
+    display: inline-block;
+    background: #2b6cff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.reference-btn:hover {
+    background: #1f56d1;
+    transform: translateY(-1px);
+}
+
+.references-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.references-grid::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    left: 50%;
+    width: 4px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+.references-box {
+    background: #ffffff;
+    border: 1px solid #d6d6d6;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.reference-item {
+    display: grid;
+    gap: 6px;
+    padding: 12px 0;
+    border-bottom: 4px solid #111;
+    padding: 12px 12px 12px 12px;
+    text-align: center;
+    justify-items: center;
+}
+
+.reference-label {
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #2b6cff;
+    margin-bottom: 10px;
+    margin-top: -3px;
+}
+
+.reference-item h3 {
+    margin: 0;
+    font-size: 17px;
+    color: #111;
+}
+
+.reference-item p {
+    margin: 0;
+    font-size: 13px;
+    color: #333;
+}
+
+.reference-role {
+    font-weight: 600;
+}
+
+.reference-link {
+    color: #2b6cff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 6px;
+    display: inline-block;
+}
+
+.reference-link:hover {
+    text-decoration: underline;
 }
 
 #professional {
@@ -503,13 +698,13 @@ section {
 }
 
 .awards-cta {
-    margin-top: 90px;
+    margin-top: 70px;
     background: transparent;
     border: none;
     border-radius: 0;
     padding: 0;
     text-align: center;
-    margin-left: 24px;
+    margin-left: 12px;
 }
 
 .awards-cta p {
@@ -744,6 +939,14 @@ footer {
 
     .education-grid {
         grid-template-columns: 1fr;
+    }
+
+    .references-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .references-container {
+        padding: 24px 20px;
     }
 
     .awards-list {
